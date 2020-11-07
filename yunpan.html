@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ca网盘</title>
+    <style>
+      .list {
+        list-style: none;
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+      }
+      .download {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="logout">退出登录</button>
+    <div id="yunpan"></div>
+    <div id="file_upload"></div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="unlogged.js"></script>
+  <script>
+    $("#logout").click(() => {
+      window.sessionStorage.clear();
+      window.location.href = "login.html";
+    });
+
+    //   $.post("/chromedriver.exe");
+    //   window.location.href="/chromedriver.exe";
+  </script>
+</html>
